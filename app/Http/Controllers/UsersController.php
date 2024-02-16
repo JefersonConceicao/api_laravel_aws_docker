@@ -17,6 +17,11 @@ class UsersController extends Controller
         return response()->json(User::all());
     }
 
+    public function caractereisticas()
+    {
+        return response()->json(User::find(1));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
