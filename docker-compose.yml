@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+    app:
+        build: './'
+        container_name: 'laravel_container'
+        ports:
+            - '80:80'
+        volumes:
+          - './:/var/www/html/'
+        networks:
+          - default
